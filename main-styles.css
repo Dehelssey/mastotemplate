@@ -1396,6 +1396,7 @@ a.account__display-name:hover strong, .notification__display-name:hover {
     display: none;
 }
 
+/* show thread button design update *.
 
 .status__content__read-more-button {
 
@@ -1414,3 +1415,15 @@ a.account__display-name:hover strong, .notification__display-name:hover {
     text-decoration: none;
 
 }
+
+/* display full images instead of cropped ones in feeds thanks to Kevin Guertin's piece of code (https://mastodon.social/@leonivek) */
+
+  .media-gallery
+  {
+    height: 100% !important;
+  }
+
+  .media-gallery__item-gifv-thumbnail
+  {
+    transform: translateY(0%);
+  }
