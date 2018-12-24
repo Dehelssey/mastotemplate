@@ -8,3 +8,7 @@ to apply this theme to your Mastodon's instance used Stylus for Firefox, create 
 ### that's all folks !
 
 (remember you have to do it on every browser you use, those tweaks are stored in your browser not on your instance)
+
+**video screenshot**
+
+![v2](https://raw.githubusercontent.com/JaredLethal/mastotemplate/master/masto2.gif)
