@@ -1397,6 +1397,7 @@ a.account__display-name:hover strong, .notification__display-name:hover {
     display: none;
 }
 
+/* read more / show thread UI */
 
 .status__content__read-more-button {
 
@@ -1416,6 +1417,8 @@ a.account__display-name:hover strong, .notification__display-name:hover {
 
 }
 
+/* full-height media preview in feeds */
+
   .media-gallery
   {
     height: 100% !important;
@@ -1425,3 +1428,17 @@ a.account__display-name:hover strong, .notification__display-name:hover {
   {
     transform: translateY(0%);
   }
+
+/* timestamp next to toots are now in a lighter circle so they're easily distinguished from toot content */
+
+.status__relative-time {
+
+    background: rgba(255,255,255,0.07);
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 0 0 5px 5px;
+    font-size: 11px;
