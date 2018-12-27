@@ -1434,3 +1434,10 @@ a.account__display-name:hover strong, .notification__display-name:hover {
 .status__relative-time {
 color: var(--accent);
 }
+
+/* auto-display CW field */
+
+.compose-form .spoiler-input {
+    height: 47px;
+    opacity: 1.0;
+}
