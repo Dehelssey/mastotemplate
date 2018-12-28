@@ -1444,6 +1444,15 @@ color: var(--accent);
 
 /* hiding scrollbars on feed columns so design is not ugly */
 
+
+/* for Firefox */
+
 .column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
     scrollbar-width: none !important;
+}
+
+/* for Chrome */
+
+.column > .scrollable::-webkit-scrollbar, .landing-page #mastodon-timeline::-webkit-scrollbar, .activity-stream .entry::-webkit-scrollbar {
+    width: 0px;
 }
