@@ -1441,3 +1441,9 @@ color: var(--accent);
     height: 47px;
     opacity: 1.0;
 }
+
+/* hiding scrollbars on feed columns so design is not ugly */
+
+.column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
+    scrollbar-width: none !important;
+}
