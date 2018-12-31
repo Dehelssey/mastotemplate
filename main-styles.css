@@ -1420,6 +1420,9 @@ a.account__display-name:hover strong, .notification__display-name:hover {
 .autosuggest-textarea__textarea {
     max-height: 250px;
 }
+.boost-modal__action-bar, .confirmation-modal__action-bar, .mute-modal__action-bar {
+    background: #171c29;
+}
 
 
 
