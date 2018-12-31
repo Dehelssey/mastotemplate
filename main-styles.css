@@ -1447,7 +1447,7 @@ color: var(--accent);
 
 /* for Firefox */
 
-.column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
+html, .column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
     scrollbar-width: thin !important;
     scrollbar-color: #1f2637 transparent!important
 }
