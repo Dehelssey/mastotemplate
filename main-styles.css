@@ -1417,6 +1417,11 @@ a.account__display-name:hover strong, .notification__display-name:hover {
     background: var(--bg);
 }
 
+.autosuggest-textarea__textarea {
+    max-height: 250px;
+}
+
+
 
 /* full-height media preview in feeds */
 
@@ -1453,14 +1458,14 @@ html, .column > .scrollable, .landing-page #mastodon-timeline, .activity-stream 
 }
 
 /* if you want to remove columns scrollbars completely, uncomment that code 
-.column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
+.drawer__inner, .autosuggest-textarea__textarea, .column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
     scrollbar-width: none !important;
 }
 */
 
 /* for Chrome */
 
-.column > .scrollable::-webkit-scrollbar, .landing-page #mastodon-timeline::-webkit-scrollbar, .activity-stream .entry::-webkit-scrollbar {
+.drawer__inner::-webkit-scrollbar, .autosuggest-textarea__textarea::-webkit-scrollbar, .column > .scrollable::-webkit-scrollbar, .landing-page #mastodon-timeline::-webkit-scrollbar, .activity-stream .entry::-webkit-scrollbar {
     width: 7px;
     /* width: 0px;
     for complete removal of scrollbars on Chrome */
