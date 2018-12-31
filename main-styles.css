@@ -112,7 +112,6 @@ base background and text
 /* status columns */
 .column > .scrollable,
 .status,
-.status__content,
 .detailed-status,
 .detailed-status__action-bar,
 .focusable:focus .detailed-status,
@@ -121,7 +120,6 @@ base background and text
 .setting-text:active,
 .setting-text:focus,
 .domain .domain__domain-name,
-.status-direct .status__content .status__content__spoiler-link,
 .column-link,
 .getting-started a.column-link,
 /* search */
@@ -300,11 +298,6 @@ base background and text
 .drawer__tab,
 .tabs-bar,
 .search-results__section h5,
-/* DMs */
-.status.status-direct,
-.focusable:focus .status.status-direct,
-.status-direct .status__content,
-.notification-favourite .status.status-direct,
 /* column preferences */
 .column-settings__section,
 .column-header__collapsible,
@@ -365,7 +358,6 @@ body.lighter,
 .landing-page__call-to-action,
 .public-layout .header .nav-button,
 .nothing-here {
-    background: var(--bgPage);
     color: var(--textPage)
 }
 
@@ -1417,6 +1409,11 @@ a.account__display-name:hover strong, .notification__display-name:hover {
 
 }
 
+.column-subheading {
+    background: #171c29;
+}
+
+
 /* full-height media preview in feeds */
 
   .media-gallery
@@ -1442,17 +1439,27 @@ color: var(--accent);
     opacity: 1.0;
 }
 
-/* hiding scrollbars on feed columns so design is not ugly */
-
+/* custom scrollbars */
 
 /* for Firefox */
 
 .column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
+    scrollbar-width: thin !important;
+    scrollbar-color: #1f2637 transparent!important
+}
+
+/* if you want to remove columns scrollbars completely, uncomment that code 
+.column > .scrollable, .landing-page #mastodon-timeline, .activity-stream .entry {
     scrollbar-width: none !important;
 }
+*/
 
 /* for Chrome */
 
 .column > .scrollable::-webkit-scrollbar, .landing-page #mastodon-timeline::-webkit-scrollbar, .activity-stream .entry::-webkit-scrollbar {
-    width: 0px;
+    width: 7px;
+    /* width: 0px;
+    for complete removal of scrollbars on Chrome */
 }
+
+::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px; background-color: transparent; } ::-webkit-scrollbar-button:hover{ background-color: transparent; } ::-webkit-scrollbar-thumb{ background-color: #1f2637; box-shadow: none; } ::-webkit-scrollbar-thumb:hover{ background-color: #393f4f; box-shadow: none; } ::-webkit-scrollbar-track{ background-color: transparent; } ::-webkit-scrollbar-track:hover{ background-color: transparent; } ::-webkit-scrollbar{ width: 7; }
