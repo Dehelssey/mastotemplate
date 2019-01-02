@@ -1424,7 +1424,9 @@ a.account__display-name:hover strong, .notification__display-name:hover {
     background: #171c29;
 }
 
-
+.empty-column-indicator, .error-column {
+    background: transparent;
+}
 
 /* full-height media preview in feeds */
 
