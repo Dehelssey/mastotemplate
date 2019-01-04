@@ -1432,6 +1432,11 @@ a.account__display-name:hover strong, .notification__display-name:hover {
     background: #171c29;
 }
 
+/* ajust rainbow hover effect on profile setting large button */
+.edit_account .btn:hover {
+    background-size: cover;
+}
+
 /* full-height media preview in feeds */
 
   .media-gallery
