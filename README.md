@@ -11,4 +11,4 @@ to apply this theme to your Mastodon's instance used Stylus for Firefox, create 
 
 **video screenshot**
 
-![v2](https://raw.githubusercontent.com/JaredLethal/mastotemplate/master/masto2.gif)
+![v2](https://raw.githubusercontent.com/JaredLethal/mastotemplate/master/masto.gif)
