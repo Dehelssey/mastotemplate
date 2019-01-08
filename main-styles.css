@@ -1486,3 +1486,11 @@ html, .column > .scrollable, .landing-page #mastodon-timeline, .activity-stream 
 }
 
 ::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px; background-color: transparent; } ::-webkit-scrollbar-button:hover{ background-color: transparent; } ::-webkit-scrollbar-thumb{ background-color: #1f2637; box-shadow: none; } ::-webkit-scrollbar-thumb:hover{ background-color: #393f4f; box-shadow: none; } ::-webkit-scrollbar-track{ background-color: transparent; } ::-webkit-scrollbar-track:hover{ background-color: transparent; } ::-webkit-scrollbar{ width: 7; }
+
+
+/* rainbow loading bar */
+
+.loading-bar {
+background: url(https://hostux.pics/images/2019/01/02/hover-rainbow42dff3bbdf6432b8.gif);
+background-position: center;
+}
